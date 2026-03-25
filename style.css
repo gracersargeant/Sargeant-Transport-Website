@@ -107,6 +107,9 @@ img { max-width: 100%; display: block; }
 .logo-img {
   height: 44px;
   width: auto;
+  display: block;
+  max-width: 200px;
+  background: red;
 }
 
 /* Navigation */
