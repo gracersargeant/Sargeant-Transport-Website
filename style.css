@@ -18,10 +18,10 @@
 
 :root {
   /* === BRAND COLOURS — edit these === */
-  --regal-navy: #003777;       /* primary dark colour */
-  --steel-azure: #0e498c;       /* slightly lighter navy */
-  --cool-sky: #71bbff;       /* accent / highlight */
-  --cool-sky: #66b5ff;       /* lighter accent for hover */
+  --navy: #003777;       /* primary dark colour */
+  --navy-mmid: #0e498c;       /* slightly lighter navy */
+  --orange: #71bbff;       /* accent / highlight */
+  --orange-lt: #66b5ff;       /* lighter accent for hover */
 
   /* === NEUTRAL COLOURS — usually leave these alone === */
   --slate:     #445566;
