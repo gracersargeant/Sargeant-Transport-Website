@@ -325,8 +325,8 @@ img { max-width: 100%; display: block; }
 .g-card span { position: relative; z-index: 1; }
 
 .g1 { background: rgba(113,187,255,1);  animation-delay: 0.1s; }
-.g2 { background: rgba(102,181,255,1);  animation-delay: 0.2s; border: 1px solid rgba(255,255,255,0.12); }
-.g3 { background: rgba(102,181,255,1);  animation-delay: 0.3s; border: 1px solid rgba(255,255,255,0.12); }
+.g2 { background: rgba(37,89,149,1);  animation-delay: 0.2s; border: 1px solid rgba(255,255,255,0.12); }
+.g3 { background: rgba(37,89,149,1);  animation-delay: 0.3s; border: 1px solid rgba(255,255,255,0.12); }
 .g4 { background: rgba(113,187,255,1);   animation-delay: 0.4s; }
 
 @keyframes fadeUp {
