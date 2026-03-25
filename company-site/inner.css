@@ -1,0 +1,255 @@
+/* ================================================================
+   INNER PAGES STYLESHEET (training, policies, newsletter)
+   This file styles the page banner, content sections, and
+   resource list items used across the inner pages.
+================================================================ */
+
+/* ----------------------------------------------------------------
+   PAGE BANNER (the dark header area on inner pages)
+---------------------------------------------------------------- */
+.page-banner {
+  background: var(--navy);
+  padding: 48px 24px 52px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-banner::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(232, 99, 10, 0.08);
+  pointer-events: none;
+}
+
+.page-banner-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumb a {
+  color: rgba(255,255,255,0.55);
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover { color: var(--white); }
+.breadcrumb span { color: rgba(255,255,255,0.3); }
+
+.page-banner h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+.page-banner p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.65);
+  max-width: 500px;
+}
+
+/* Active nav link */
+.main-nav a.active {
+  color: var(--white);
+  background: rgba(255,255,255,0.12);
+}
+
+/* ----------------------------------------------------------------
+   INNER PAGE MAIN AREA
+---------------------------------------------------------------- */
+.inner-main {
+  padding: 48px 24px 80px;
+  background: var(--light);
+  min-height: 60vh;
+}
+
+.inner-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ----------------------------------------------------------------
+   CONTENT SECTION (each category block)
+---------------------------------------------------------------- */
+.content-section {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.section-header {
+  padding: 24px 28px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.section-header h2 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 3px;
+}
+
+.section-header p {
+  font-size: 14px;
+  color: var(--slate-lt);
+  margin: 0;
+}
+
+/* ----------------------------------------------------------------
+   RESOURCE LIST (documents / links)
+   Each document = one .resource-item div
+---------------------------------------------------------------- */
+.resource-list {
+  padding: 8px 0;
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 28px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+
+.resource-item:last-child { border-bottom: none; }
+
+.resource-item:hover { background: var(--light); }
+
+.resource-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.resource-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.resource-meta {
+  font-size: 12px;
+  color: var(--slate-lt);
+}
+
+.resource-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--orange);
+  white-space: nowrap;
+  padding: 6px 14px;
+  border: 1px solid var(--orange);
+  border-radius: var(--radius);
+  transition: all 0.2s;
+}
+
+.resource-link:hover {
+  background: var(--orange);
+  color: var(--white);
+}
+
+/* ----------------------------------------------------------------
+   COMING SOON PLACEHOLDER
+   Remove this block and replace with resource-item divs when
+   you have content ready to add.
+---------------------------------------------------------------- */
+.coming-soon {
+  padding: 32px 28px;
+  font-size: 14px;
+  color: var(--slate-lt);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coming-soon span {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+/* ----------------------------------------------------------------
+   NEWSLETTER ENTRY STYLES
+---------------------------------------------------------------- */
+.newsletter-entry {
+  padding: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.newsletter-entry:last-child { border-bottom: none; }
+
+.newsletter-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nl-issue {
+  background: var(--orange);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+.nl-date {
+  font-size: 13px;
+  color: var(--slate-lt);
+}
+
+.nl-title {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.nl-summary {
+  font-size: 14px;
+  color: var(--slate);
+  margin-bottom: 18px;
+  max-width: 560px;
+}
+
+/* ----------------------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .section-header { padding: 20px; }
+  .resource-item { padding: 14px 20px; }
+  .coming-soon { padding: 24px 20px; }
+  .newsletter-entry { padding: 20px; }
+}
